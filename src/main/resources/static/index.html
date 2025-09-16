@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Project (Home)</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #fff9c4, #fbc02d);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .wrapper {
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            padding: 60px;
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .wrapper::before, .wrapper::after {
+            content: '';
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            background: rgba(255, 138, 0, 0.2);
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        .wrapper::before {
+            top: -80px;
+            left: -80px;
+        }
+
+        .wrapper::after {
+            bottom: -80px;
+            right: -80px;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-weight: 700;
+            color: #f57f17;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .highlight {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .name{
+            color: #d84315;
+            text-transform: uppercase;
+            font-size: 22px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .student-id {
+            color: #d84315;
+            font-size: 22px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .course {
+            color: #d84315;
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(45deg, #f9a825, #f57f17);
+            padding: 16px 32px;
+            border-radius: 50px;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 40px;
+            display: inline-block;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transform: translateY(5px);
+        }
+
+        a:hover {
+            background: linear-gradient(45deg, #f57f17, #ff6f00);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="wrapper">
+    <h1>CRUD Product Project</h1>
+    <div class="highlight">
+        <span class="course">INT202 SERVER-SIDE WEB PROGRAMMING I</span>
+    </div>
+    <div class="highlight">
+        <span class="name">Thanapat Khumpiboon</span>
+        <span class="student-id">66130500103</span>
+    </div>
+    <a href="products/all">Show Product List</a>
+</div>
+
+</body>
+</html>
